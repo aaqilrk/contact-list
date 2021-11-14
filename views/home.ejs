@@ -1,0 +1,26 @@
+    <link rel="stylesheet" href="/css/home.css">
+
+    <div id="contacts-list-container">
+        <ul>
+            <% for(let i of contact_list) { %>
+            <li class="contacts">
+                <div class="details">
+                    <p> <%= i.name %> </p>
+                    <p> <%= i.phoneNo %> </p>
+                </div>
+
+                <div class="delete-contact">
+                    <a href="/contact/delete/?id=<%= i.id %>">
+                        <i class="fas fa-window-close"></i>
+                    </a>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <form action="/contact/create" method="post">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="number" name="phoneNo" placeholder="Enter Phone No" required>
+        <button type="submit">Add contact</button>
+    </form>

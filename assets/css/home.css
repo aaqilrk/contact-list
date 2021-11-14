@@ -1,0 +1,84 @@
+#contacts-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div ul li {
+    display: flex;
+    color: white;
+    list-style: none;
+    background-color: rgb(128, 128, 206);
+    border-radius: 5px;
+    margin: 10px;
+    width: 400px;
+    padding: 10px;
+}
+
+.contacts .details {
+    width: 90%;
+}
+
+.contacts .delete-contact {
+    width: 10%;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.contacts .delete-contact a {
+    color: red;
+}
+
+div ul li p {
+    font-size: 18px;
+    display: inline-block;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border: 1.5px solid grey;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    background-color: rgb(168, 167, 167);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(92, 91, 91);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
