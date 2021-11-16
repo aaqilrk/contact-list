@@ -5,7 +5,7 @@ Express app with mysql backend.
 ## Prerequisites
 
 ```bash
-  nodeJS && mysql
+  Node.js && MySQL
 ```
 
 ## Installation
@@ -13,6 +13,7 @@ Express app with mysql backend.
 Install with npm.
 
 ```bash
+  git clone <repository-url>
   cd contact-list
   npm install
   npx sequelize-cli db:create
