@@ -5,7 +5,7 @@ A reactive Single-Page contact list!!
 1. Node.js
 2. SQL Server
 
-# Usage
+## Usage
 1. Fork the repo and then clone it or download it.
 
 2. First install all dependencies:
