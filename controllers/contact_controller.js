@@ -1,22 +1,17 @@
-const {
-    Contact
-} = require('../models');
+const Contact = require('../models/contact');
 
-module.exports.create = async (req, res) => {
-    await Contact.create(req.body).catch((err) => {
-        if (err) return console.log('Error in creating a contact');
-    });
-    return res.redirect('back');
+module.exports.create = (req, res) => {
+    return Contact.create(req.body)
+        .then(() => res.redirect('back'))
+        .catch(err => console.log(err));
 }
 
-module.exports.delete = async (req, res) => {
-    let id = req.query.id;
-    await Contact.destroy({
-        where: {
-            id: id
-        }
-    }).catch((err) => {
-        if (err) console.log("Error in deleting contact");
-    });
-    return res.redirect('back');
+module.exports.delete = (req, res) => {
+    return Contact.destroy({
+            where: {
+                id: req.query.id
+            }
+        })
+        .then(() => res.redirect('back'))
+        .catch(err => console.log(err));
 }
