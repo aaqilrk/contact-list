@@ -1,23 +1,35 @@
 # Contact List Web App
+A reactive Single-Page contact list!!
 
-Express app with mysql backend.
+## Requirements
+1. Node.js
+2. SQL Server
 
-## Prerequisites
+# Usage
+1. Fork the repo and then clone it or download it.
 
-```bash
-  Node.js && MySQL
-```
+2. First install all dependencies:
+    ```bash
+    # with npm
+    npm install
+    ```
 
-## Installation
+3. Create a SQL database 
 
-Install with npm.
+4. Create a `.env` file and insert the following code. Replace values with yours!!
 
-```bash
-  git clone <repository-url>
-  cd contact-list
-  npm install
-  npx sequelize-cli db:create
-  npm start
-```
+    ```javascript
+    SQL_DIALECT = 'mysql'
+    SQL_DATABASE = 'db'
+    SQL_USER='user'
+    SQL_PASSWORD='password'
+    ```
+5. Start the server
+    ```javascript
+    npm start
+    ```
 
-Wep app @ [localhost:3000](http://localhost:3000/)
+6. Now run the app
+    ```javascript
+    localhost:[PORT] (PORT=defined in .env)
+    ```
